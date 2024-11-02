@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+    }
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      color: $font-color;
+      margin-bottom: 15px;
+  
+      span {
+        color: $framboise;
+      }
+    }
+  
+    nav {
+      .menu {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+
+        @media (max-width: 340px) {
+          flex-direction: column;
+        }
+  
+        a {
+        
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $gray;
+          font-size: 0.7rem;
+          font-weight: 700;
+          transition: color 0.3s, background-color 0.3s;
+          @media (max-width: 340px) {
+            padding: 6px;
+          }
+          &:hover {
+            color: $white;
+            background-color: $framboise;
+          }
+        }
+      }
+    }
+  }
+  

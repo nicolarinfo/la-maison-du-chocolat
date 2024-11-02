@@ -1,0 +1,44 @@
+.hero {
+    height: 280px;
+    background: url("/images/main.jpg") center / 350% no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    @media (min-width: $desktop-width) {
+      height: 500px;
+      background-position: center;
+      background-size: auto;
+    }
+  
+    h1 {
+      color: $white;
+      margin: 0;
+      width: 90%;
+      font-weight: 500;
+
+      @media (min-width: $desktop-width) {
+        font-size: 2.5rem;
+      }
+
+      
+
+      span {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 700;
+
+        @media (min-width: $desktop-width) {
+          font-size: 3rem;
+        }
+  
+      }
+    }
+
+    button {
+      @include button;
+    }
+  }
+  

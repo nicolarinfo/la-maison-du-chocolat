@@ -1,0 +1,30 @@
+footer {
+    background-color: $footer-color;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 16px;
+
+    a {
+        padding-top: 24px;
+        font-family: "Crete Round";
+        color: $white;
+        margin: 0 auto;
+        font-size: 1.4rem;
+        font-weight: 700;
+        span {
+            color: $framboise;
+        }
+    }
+
+    p {
+        color: $font-color;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+}
+
+

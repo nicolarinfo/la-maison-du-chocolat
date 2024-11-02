@@ -1,0 +1,14 @@
+@use "sass:color";
+
+@mixin button($bg-color: $framboise, $text-color: $white) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+      background-color: color.scale($bg-color, $lightness: -10%);
+  }
+}

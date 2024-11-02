@@ -1,0 +1,41 @@
+.quality-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+      height: 250px;
+    }
+
+    &__icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    &__description {
+      font-size: 0.6rem;
+      text-align: center;
+      color: $font-color;
+      margin-top: 0;
+      
+
+      @media (min-width: $desktop-width) {
+        max-width: 75%;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
