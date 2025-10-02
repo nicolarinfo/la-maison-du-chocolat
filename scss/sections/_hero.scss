@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+@use "../components/buttons" as *;
 .hero {
     height: 280px;
     background: url("/images/main.jpg") center / 350% no-repeat;
@@ -41,4 +43,3 @@
       @include button;
     }
   }
-  

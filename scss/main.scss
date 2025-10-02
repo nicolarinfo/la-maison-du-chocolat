@@ -1,9 +1,9 @@
-@import 'variables';
-@import 'components/buttons';
-@import 'base';
-@import 'header';
-@import 'hero';
-@import 'quality';
-@import 'promotion';
-@import 'contact';
-@import 'footer';
+@use "./abstracts/variables" as *;
+@use "./components/base";
+@use "./components/buttons";
+@use "./layout/header";
+@use "./layout/footer";
+@use "./sections/contact";
+@use "./sections/hero";
+@use "./sections/promotion";
+@use "./sections/quality";

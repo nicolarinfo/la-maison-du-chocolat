@@ -1,3 +1,4 @@
+@use "../abstracts/variables" as *;
 .quality-chart {
     display: flex;
     flex-direction: column;
@@ -38,4 +39,3 @@
       }
     }
   }
-  
